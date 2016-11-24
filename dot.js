@@ -4,7 +4,7 @@ angular.module('AdminLogin', [])
 		if($scope.username==="admin"&&$scope.password==="admin"){
 			$scope.login1="Anda berhasil login...";
 			alert('Selamat Datang Admin', 10);
-			setTimeout("location.href='index.html'", 10);
+			setTimeout("location.href='1.html'", 10);
 		}else{
 			alert("Username dan Password salah!")
 		}
