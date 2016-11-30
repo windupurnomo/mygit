@@ -19,4 +19,9 @@ angular.module('app', ['ui.router'])
         templateUrl: 'tpl/help.html'
     })
 
+        .state('zcode', {
+        url: '/zcode',
+        templateUrl: 'tpl/zcode.html'
+    })
+
 });
