@@ -14,4 +14,9 @@ angular.module('app', ['ui.router'])
         templateUrl: 'tpl/about.html'
     })
 
+    .state('help', {
+        url: '/help',
+        templateUrl: 'tpl/help.html'
+    })
+
 });
