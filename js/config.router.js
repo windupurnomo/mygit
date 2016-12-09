@@ -10,14 +10,16 @@ angular.module('app', ['ui.router'])
         controller: 'HomeCtrl'
     })
 
-    .state('about', {
-        url: '/about',
-        templateUrl: 'tpl/about.html'
+    .state('route', {
+        url: '/route',
+        templateUrl: 'tpl/route.html',
+        controller: 'RouteCtrl'
     })
 
-    .state('help', {
-        url: '/help',
-        templateUrl: 'tpl/help.html'
+    .state('passenger', {
+        url: '/passenger',
+        templateUrl: 'tpl/passenger.html',
+        controller: 'PassengerCtrl'
     })
 
 });
