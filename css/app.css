@@ -5,6 +5,10 @@
     font-size: x-large;
 }
 
+.table-hover tr {
+    cursor: pointer;
+}
+
 .breadcrumb {
     padding: 0px;
     background: transparent;

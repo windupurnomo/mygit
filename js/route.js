@@ -1,7 +1,8 @@
 'use strict';
 angular.module('app')
 
-.controller('RouteCtrl', function ($scope){
-	$scope.hello = "Hello world";
-	$scope.coba = "hello";
+.controller('RouteCtrl', function($scope, $state) {
+    $scope.next = function() {
+        $state.go("passenger");
+    }
 });
