@@ -36,7 +36,12 @@ angular.module('app')
             cls = char === clear,
             isDone = char === done,
             a = $scope.bookingCode.slice(0, -1),
-            b = $scope.lastName.slice(0, -1);
+            b = $scope.lastName.slice(0, -1),
+            click1 = new Audio('assets/click.ogg'),
+            click2 = new Audio('assets/whistle.ogg');
+        if (cls || del || isDone) click2.play();
+        else click1.play();
+
         if (isDone) exec();
         else if ($scope.current === 0) {
             if (del) $scope.bookingCode = a;
