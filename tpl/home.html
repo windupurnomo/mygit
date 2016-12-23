@@ -1,19 +1,35 @@
 <h2>Home</h2> {{hello}}
-
+<ul>
+    <li ng-repeat="l in langs">{{l}}</li>
+</ul>
+<form ng-submit="save()">
+    <p>
+        Nama:
+        <input type="text" ng-model="form.name">
+    </p>
+    <p>
+        Alamat:
+        <input type="text" ng-model="form.address">
+    </p>
+    <p>
+        Phone:
+        <input type="text" ng-model="form.phone">
+    </p>
+    <input type="submit" value="Simpan">
+</form>
+<pre>
+	{{form|json}}
+</pre>
 <div>
     <h3>Simple Binding</h3>
     <input ng-model="coba" type="text" name="coba">
     <br>
     <span>{{coba}}</span>
 </div>
-
 <hr/>
-
 <div>
-	<h3>Simple Counting</h3>
-	<input type="number" ng-model="a" > + <input type="number" ng-model="b"> = <input value="{{a + b}}">
-
-	xxx + yyy = result
-	xxx - yyy = result
-	xxx * yyy = result
+    <h3>Simple Counting</h3>
+    <input type="number" ng-model="a"> +
+    <input type="number" ng-model="b"> =
+    <input value="{{a + b}}"> xxx + yyy = result xxx - yyy = result xxx * yyy = result
 </div>

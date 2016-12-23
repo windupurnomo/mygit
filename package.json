@@ -1,0 +1,36 @@
+{
+  "name": "citilink",
+  "version": "1.0.0",
+  "description": "Citilink web",
+  "main": "server.js",
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://windu@13.67.52.95/Citilink.Git.Server/member-app.git"
+  },
+  "keywords": [
+    "citilink",
+    "booking",
+    "wallet"
+  ],
+  "author": "Windu Purnomo",
+  "license": "ISC",
+  "dependencies": {
+    "bower": "^1.7.9",
+    "connect": "^3.4.1",
+    "serve-static": "^1.10.2"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-ng-annotate": "^2.0.2",
+    "imagemin-mozjpeg": "^6.0.0"
+  }
+}
