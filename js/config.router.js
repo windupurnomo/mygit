@@ -12,7 +12,8 @@ angular.module('app', ['ui.router'])
 
     .state('about', {
         url: '/about',
-        templateUrl: 'tpl/about.html'
+        templateUrl: 'tpl/about.html',
+        controller: 'AboutCtrl'
     })
 
     .state('help', {
