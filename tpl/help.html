@@ -1,1 +1,16 @@
-<h2>Ini Adalah Halaman Help</h2>
+<ul>
+<li ng-repeat="x in buah">{{($index+1)*10}}  {{x}}
+</li>
+</ul>
+<table class="table table-striped">
+	<tr>
+		<th>nama</th>
+		<th>hp</th>
+		<th>nilai</th>
+	</tr>
+	<tr ng-repeat="s in person">
+		<td>{{s.nama}}</td>
+		<td>{{s.hp}}</td>
+		<td>{{s.nilai}}</td>
+	</tr>
+</table>

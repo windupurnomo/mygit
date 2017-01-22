@@ -18,7 +18,8 @@ angular.module('app', ['ui.router'])
 
     .state('help', {
         url: '/help',
-        templateUrl: 'tpl/help.html'
+        templateUrl: 'tpl/help.html',
+        controller: "HelpCtrl"
     })
 
         .state('zcode', {
