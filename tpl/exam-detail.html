@@ -1,89 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
 <div class="container">
-	<div class="row">
-		<form class="form-horizontal">
-            <fieldset>
-                <!-- Form Name -->
-                <legend>Detail Ujian</legend>
-                <!-- Text input-->
-                <div class="row">
-                <br>
-
-                    <div class="form-group">
-                    <div>
-                        <label class="col-md-4 control-label" for="textinput">Judul Ujian :</label>
-                    <div class="col-md-6">
-                        <input id="textinput" name="Nama" type="text" placeholder="Matematika" class="form-control input-md" required="" readonly="readonly">
-                    </div>
-                    <div>
-                        <label class="col-md-4 control-label" for="textinput">Deskripsi :</label>
-                    <div class="col-md-6">
-                        <input id="textinput" name="Nama" type="text" placeholder="Musingin mtk mah" class="form-control input-md" required="" readonly="readonly">
-                    </div>
-                    <div>
-                        <label class="col-md-4 control-label" for="textinput">Mapel :</label>
-                    <div class="col-md-6">
-                        <input id="textinput" name="Nama" type="text" placeholder="Matematika" class="form-control input-md" required="" readonly="readonly">
-                    </div>
-                    <div>
-                        <label class="col-md-4 control-label" for="textinput">Kelas :</label>
-                    <div class="col-md-6">
-                        <input id="textinput" name="Nama" type="text" placeholder="12" class="form-control input-md" required="" readonly="readonly">
-                    </div>
-                    <div>
-                        <label class="col-md-4 control-label" for="textinput">Guru :</label>
-                    <div class="col-md-6">
-                        <input id="textinput" name="Nama" type="text" placeholder="pak blabla" class="form-control input-md" required="" readonly="readonly">
-                    </div>
-                    <div>
-                        <label class="col-md-4 control-label" for="textinput">Tanggal :</label>
-                    <div class="col-md-6">
-                        <input id="textinput" name="Nama" type="date" placeholder="dd/mm/yyyy" class="form-control input-md" required="" readonly="readonly">
-                    </div>
-                    <div>
-                        <label class="col-md-4 control-label" for="textinput">Durasi :</label>
-                    <div class="col-md-6">
-                        <input id="textinput" name="Nama" type="number" placeholder="160{{min}}" class="form-control input-md" required="" readonly="readonly">
-                    </div>
-                    <div>
-                        <label class="col-md-4 control-label" for="textinput">Jumlah Soal :</label>
-                    <div class="col-md-6">
-                        <input id="textinput" name="Nama" type="number" placeholder="9" class="form-control input-md" required="" readonly="readonly">
-                    </div>
-                    <div>
-                        <label class="col-md-4 control-label" for="textinput">List Siswa :</label>
-                    <div class="col-md-6">
-                        <table class="table table-striped row">
-                            <tr>
-                                <th>ID</th>
-                                <th>Nama</th>
-                                <th>Kelas</th>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>Amin</td>
-                                <td>12</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div>
-                        <label class="col-md-4 control-label" for="textinput">List Soal :</label>
-                    <div class="col-md-6">
-                        <table class="table table-striped row">
-                            <tr>
-                                <th>ID</th>
-                                <th>Mapel</th>
-                                <th>Soal</th>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>Matematika</td>
-                                <td>Faktor - Faktor</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <br>
-                    <button class="col-md-4 btn btn-default btn-sm">Ikuti Ujian Ini</button>
-                </div>
-        </form>
-	</div>
+    <div id="content">
+        <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+            <li class="active"><a href="#tab-1" data-toggle="tab">General</a></li>
+            <li><a href="#tab-2" data-toggle="tab">Siswa</a></li>
+            <li><a href="#tab-3" data-toggle="tab">Soal</a></li>
+        </ul>
+        <hr>
+        <div id="my-tab-content" class="tab-content">
+            <div class="tab-pane active" id="#tab-1">
+                <label class="col-md-4 control-label" for="textinput">Judul Ujian :</label>
+                            <div class="col-md-6">
+                                <input id="textinput" name="Nama" type="text" placeholder="Matematika" class="form-control input-md" required="" readonly="readonly">
+                            </div>
+                            <div>
+                                <label class="col-md-4 control-label" for="textinput">Deskripsi :</label>
+                            <div class="col-md-6">
+                                <input id="textinput" name="Nama" type="text" placeholder="Musingin mtk mah" class="form-control input-md" required="" readonly="readonly">
+                            </div>
+                            <div>
+                                <label class="col-md-4 control-label" for="textinput">Mapel :</label>
+                            <div class="col-md-6">
+                                <input id="textinput" name="Nama" type="text" placeholder="Matematika" class="form-control input-md" required="" readonly="readonly">
+                            </div>
+                            <div>
+                                <label class="col-md-4 control-label" for="textinput">Kelas :</label>
+                            <div class="col-md-6">
+                                <input id="textinput" name="Nama" type="text" placeholder="12" class="form-control input-md" required="" readonly="readonly">
+                            </div>
+                            <div>
+                                <label class="col-md-4 control-label" for="textinput">Guru :</label>
+                            <div class="col-md-6">
+                                <input id="textinput" name="Nama" type="text" placeholder="pak blabla" class="form-control input-md" required="" readonly="readonly">
+                            </div>
+                            <div>
+                                <label class="col-md-4 control-label" for="textinput">Tanggal :</label>
+                            <div class="col-md-6">
+                                <input id="textinput" name="Nama" type="date" placeholder="dd/mm/yyyy" class="form-control input-md" required="" readonly="readonly">
+                            </div>
+                            <div>
+                                <label class="col-md-4 control-label" for="textinput">Durasi :</label>
+                            <div class="col-md-6">
+                                <input id="textinput" name="Nama" type="number" placeholder="160{{min}}" class="form-control input-md" required="" readonly="readonly">
+                            </div>
+                            <div>
+                                <label class="col-md-4 control-label" for="textinput">Jumlah Soal :</label>
+                            <div class="col-md-6">
+                                <input id="textinput" name="Nama" type="number" placeholder="9" class="form-control input-md" required="" readonly="readonly">
+                            </div>
+                        </div>
+            </div>
+            <div id="my-tab-content" class="tab-content">
+            <div class="tab-pane" id="#tab-2">
+                <label class="col-md-4 control-label" for="textinput">List Siswa :</label>
+                            <div class="col-md-6">
+                                <table class="table table-striped row">
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Nama</th>
+                                        <th>Kelas</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Amin</td>
+                                        <td>12</td>
+                                    </tr>
+                                </table>
+                            </div>
+            </div>
+            <div id="my-tab-content" class="tab-content">
+            <div class="tab-pane" id="#tab-3">
+                <label class="col-md-4 control-label" for="textinput">List Soal :</label>
+                            <div class="col-md-6">
+                                <table class="table table-striped row">
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Mapel</th>
+                                        <th>Soal</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Matematika</td>
+                                        <td>Faktor - Faktor</td>
+                                    </tr>
+                                </table>
+                                <button class="col-md-4 btn btn-default btn-sm">Ikuti Ujian Ini</button>
+                            </div>
+            </div>
+        </div>
+    </div>
 </div>
+<script src="lib/jquery.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function ($){
+        $('tabs').tab();
+    })
+</script>
+</body>
+</html>
