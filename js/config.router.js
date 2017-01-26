@@ -4,10 +4,10 @@ angular.module('app', ['ui.router'])
 .config(function($stateProvider, $urlRouterProvider, $httpProvider) {
     $urlRouterProvider.otherwise('/');
 
-    $stateProvider.state('home', {
+    $stateProvider.state('zcode', {
         url: '/',
-        templateUrl: 'tpl/home.html',
-        controller: 'HomeCtrl'
+        templateUrl: 'tpl/zcode.html',
+        controller: 'ZcodeCtrl'
     })
 
     .state('about', {
@@ -22,9 +22,9 @@ angular.module('app', ['ui.router'])
         controller: "HelpCtrl"
     })
 
-        .state('zcode', {
-        url: '/zcode',
-        templateUrl: 'tpl/zcode.html'
+        .state('home', {
+        url: '/home',
+        templateUrl: 'tpl/home.html'
     })
 
     .state('profile', {
