@@ -1,0 +1,17 @@
+<h2>Home</h2> 
+{{hello}}
+<div>
+    <h3>Simple Binding</h3>
+    <input ng-model="coba" type="text" name="coba">
+    <br>
+    <span>{{coba}}</span>
+</div>
+
+<hr/>
+
+<div>
+	<h3>Simple Counting</h3><p>
+	<input type="number" ng-model="a" name="number">+<input type="number" ng-model="b" name=""> = <input value="{{a+b}}" type="" name="" disabled /><p>
+	<input type="number" ng-model="a"  name="number">-<input type="number" ng-model="b" name=""> = <input value="{{a-b}}" type="" name="" disabled /><p>
+	<input type="number" ng-model="a" name="number">*<input type="number" ng-model="b" name=""> = <input value="{{a*b}}" type="" name="" disabled />
+</div>

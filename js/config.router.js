@@ -6,7 +6,7 @@ angular.module('app', ['ui.router'])
 
     $stateProvider.state('zcode', {
         url: '/',
-        templateUrl: 'tpl/zcode.html',
+        templateUrl: 'tpl/home.html',
         controller: 'ZcodeCtrl'
     })
 
