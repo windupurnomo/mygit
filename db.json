@@ -1,0 +1,59 @@
+{
+  "subject": [
+    {
+      "id": 1,
+      "name": "Bahasa Indonesia"
+    },
+    {
+      "id": 2,
+      "name": "Bahasa Inggris"
+    },
+    {
+      "id": 3,
+      "name": "Sejarah"
+    },
+    {
+      "id": 4,
+      "name": "Fisika"
+    },
+    {
+      "id": 5,
+      "name": "Biologi"
+    },
+    {
+      "id": 6,
+      "name": "Kimia"
+    },
+    {
+      "id": 7,
+      "name": "Akuntansi"
+    },
+    {
+      "id": 8,
+      "name": "Sosiologi"
+    }
+  ],
+  "class": [
+    {
+      "id": 1,
+      "name": "10"
+    },
+    {
+      "id": 2,
+      "name": "11"
+    },
+    {
+      "id": 3,
+      "name": "12"
+    }
+  ],
+  "questions": [
+    {
+      "name": "Kelas C",
+      "minWeight": 20,
+      "maxWeight": 30,
+      "price": 3000000,
+      "id": 1
+    }
+  ]
+}
