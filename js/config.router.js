@@ -44,6 +44,7 @@ angular.module('app', ['ui.router'])
     .state('question', {
         url: '/question',
         templateUrl: 'tpl/question.html'
+        controller: "QuestionCTRL"
     })
 
     .state('questions', {
