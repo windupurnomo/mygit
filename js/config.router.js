@@ -1,6 +1,8 @@
 'use strict';
 angular.module('app', ['ui.router'])
 
+.constant("URL", "http://localhost:3000")
+
 .config(function($stateProvider, $urlRouterProvider, $httpProvider) {
     $urlRouterProvider.otherwise('/');
 
@@ -43,7 +45,7 @@ angular.module('app', ['ui.router'])
 
     .state('question', {
         url: '/question',
-        templateUrl: 'tpl/question.html'
+        templateUrl: 'tpl/question.html',
         controller: "QuestionCTRL"
     })
 

@@ -14,14 +14,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="Current Fleet Size">Mapel</label>  
   <div class="col-md-5">
-  <select id="Decision Timeframe" name="Decision Timeframe" class="form-control">
-      <option value="1">Pilih Soal</option>
-      <option value="2">Matematika</option>
-      <option value="3">Fisika</option>
-      <option value="4">Agama</option>
-      <option value="5">Bahasa Indonesia</option>
-    </select>
-    
+  <select ng-options="o.id as o.name for o in subjects" ng-model="form.subject" class="form-control"></select>
   </div>
 </div>
 
