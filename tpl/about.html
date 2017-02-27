@@ -1,1 +1,14 @@
-<h2>About</h2>
+<ol>
+	<li ng-repeat="s in soal">
+		<p>{{s.soal}}</p>
+		<ul>
+			<li ng-repeat="p in s.pilihan">
+			 <input type="radio" ng-model="form.pilihan[$parent.$index]" value="{{p}}" name="pilihan{{$parent.$index}}">{{p}}
+			</li>
+		</ul>
+	</li>
+</ol>
+
+<p>
+	<button class="btn btn-lg" ng-click="finish()">Selesai</button>
+</p>

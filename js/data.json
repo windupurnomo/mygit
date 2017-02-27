@@ -1,0 +1,52 @@
+[
+  {
+    "soal": "Kapan terjadinya perang diponegoro ?",
+    "pilihan": ["1945", "1946", "1947", "1948", "1949"],
+    "kunci": "1947"
+  },
+  {
+    "soal": "pada tahun berapa pangeran diponegoro meninggal ?",
+    "pilihan": ["1946", "1947", "1948", "1949", "1950"],
+    "kunci": "1950"
+  },
+  {
+    "soal": "dimana letak kerajaan sriwijaya ?",
+    "pilihan": ["sulawesi", "kalimantan", "sumatera" , "jawa", "papua"],
+    "kunci": "sumatera"
+  },
+  {
+    "soal": "10x2 = ?",
+    "pilihan": ["20", "10", "19" , "49", "50"],
+    "kunci": "20"
+  },
+  {
+    "soal": "salah satu makanan khas padang dibawah ini adalah ?",
+    "pilihan": ["rendang" ,"sate","gule", "humburger","rujak bebek"],
+    "kunci": "sate"
+  },
+  {
+    "soal": "lagu indonesia raya diciptakan oleh ?",
+    "pilihan": ["w.r supratman", "megawati", "ir. soekarno", "jokowi", "ibu sud"],
+    "kunci": "w.r supratman"
+  },
+  {
+    "soal": "siapa pengetik naskah proklamasi ?",
+    "pilihan": ["sayuti melik", "w.r supratman", "jendral soedirman", "moh hatta", "ir. soekarno"],
+    "kunci": "sayuti melik"
+  },
+  {
+    "soal": "10:2 = ... ?",
+    "pilihan": ["3", "20", "7" , "5", "11"],
+    "kunci": "5"
+  },
+  {
+    "soal": "100x2 = ... ?",
+    "pilihan": ["20", "200", "300" , "400", "100"],
+    "kunci": "200"
+  },
+  {
+    "soal": "indonesia merdeka pada tahun ?",
+    "pilihan": ["1960", "1980", "1958" , "2000", "1945"],
+    "kunci": "1945"
+  }
+]
