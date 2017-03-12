@@ -1,42 +1,71 @@
 <div class="container">
-	<div class="row">
-		<form class="form-horizontal">
-            <fieldset>
-                <!-- Form Name -->
-                <legend>Detail Soal</legend>
-                <!-- Text input-->
-                <div class="row">
-                <br>
+    <fieldset class="form-horizontal">
 
-                    <div class="form-group">
-                    <div>
-                        <label class="col-md-4 control-label" for="textinput">Mapel :</label>
-                    <div class="col-md-6">
-                        <input id="textinput" name="Nama" type="text" placeholder="Matematika" class="form-control input-md" required="" readonly="readonly">
-                    </div>
-                <br>
-                    <div>
-                        <label class="col-md-4 control-label" for="textinput">Kelas :</label>
-                    <div class="col-md-6">
-                        <input id="textinput" name="Nama" type="text" placeholder="12" class="form-control input-md" required="" readonly="readonly">
-                    </div>
-                    <div>
-                        <label class="col-md-4 control-label" for="textinput">Soal :</label>
-                    <div class="col-md-6">
-                        <input id="textinput" name="Nama" type="text" placeholder="perpecahan" class="form-control input-md" required="" readonly="readonly">
-                    </div>
-                    <div>
-                        <label class="col-md-4 control-label" for="textinput">Pilihan Jawaban :</label>
-                    <div class="col-md-6">
-                        <input id="textinput" name="Nama" type="text" placeholder="a. blabla" class="form-control input-md" required="" readonly="readonly">
-                    </div>
-                    <div>
-                        <label class="col-md-4 control-label" for="textinput">Kunci Jawaban :</label>
-                    <div class="col-md-6">
-                        <input id="textinput" name="Nama" type="text" placeholder="c. blabla" class="form-control input-md" required="" readonly="readonly">
-                    </div>
-                    
-                </div>
-        </form>
-	</div>
+    <!-- Form Name -->
+    <legend>Input Soal</legend>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="Current Fleet Size">Mapel</label>  
+      <div class="col-md-5">
+        <span>{{getSubject(form.subject).name}}</span>
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="Annual Forklift Purchases">Kelas</label>  
+      <div class="col-md-5">
+        <span>{{getClass(form.class).name}}</span>
+      </div>
+    </div>
+
+    <hr/>
+
+    <div class="form-group">
+    <label class="col-md-4 control-label">Pertanyaan</label>
+      <div class="col-md-5">
+          <p>{{form.question}}</p>
+      </div>
+    </div>
+
+    <!-- Select Multiple -->
+    <div class="form-group">
+    <label class="col-md-4 control-label">Jawaban 1</label>
+      <div class="col-md-5">
+          <p ng-class="form.answer == 1 ? 'text-danger' : ''">{{form.opt1}}</p>
+      </div>
+    </div>
+
+    <div class="form-group">
+    <label class="col-md-4 control-label">Jawaban 2</label>
+      <div class="col-md-5">
+          <p ng-class="form.answer == 2 ? 'text-danger' : ''">{{form.opt2}}</p>
+      </div>
+    </div>
+
+    <div class="form-group">
+    <label class="col-md-4 control-label">Jawaban 3</label>
+      <div class="col-md-5">
+          <p ng-class="form.answer == 3 ? 'text-danger' : ''">{{form.opt3}}</p>
+      </div>
+    </div>
+
+    <div class="form-group">
+    <label class="col-md-4 control-label">Jawaban 4</label>
+      <div class="col-md-5">
+          <p ng-class="form.answer == 4 ? 'text-danger' : ''">{{form.opt4}}</p>
+      </div>
+    </div>
+
+    <!-- Button -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="singlebutton"></label>
+      <div class="col-md-4">
+        <a ui-sref="questions" class="btn btn-warning">Daftar Soal</a>
+        <a href="#/question/{{form.id}}" class="btn btn-primary">Ubah</a>
+      </div>
+    </div>
+
+    </fieldset>
 </div>

@@ -8,8 +8,7 @@ angular.module('app', ['ui.router'])
 
     $stateProvider.state('zcode', {
         url: '/',
-        templateUrl: 'tpl/home.html',
-        controller: 'ZcodeCtrl'
+        templateUrl: 'tpl/home.html'
     })
 
     .state('about', {
@@ -44,19 +43,21 @@ angular.module('app', ['ui.router'])
     })
 
     .state('question', {
-        url: '/question',
+        url: '/question/:id',
         templateUrl: 'tpl/question.html',
         controller: "QuestionCTRL"
     })
 
     .state('questions', {
         url: '/questions',
-        templateUrl: 'tpl/questions.html'
+        templateUrl: 'tpl/questions.html',
+        controller: "QuestionsCTRL"
     })
 
     .state('question-detail', {
-        url: '/question-detail',
-        templateUrl: 'tpl/question-detail.html'
+        url: '/question-detail/:id',
+        templateUrl: 'tpl/question-detail.html',
+        controller: "QuestionDetailCTRL"
     })
 
     .state('exams', {
