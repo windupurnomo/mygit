@@ -53,17 +53,6 @@
   ],
   "questions": [
     {
-      "subject": 2,
-      "class": 1,
-      "question": "Fasdfa asdf asdf asd asdf asdf asdf asdf asdf asdf as",
-      "opt1": "asdfas sad a",
-      "opt2": "asdfas xxx",
-      "opt3": "asdfa",
-      "opt4": "asdfasd",
-      "answer": "1",
-      "id": 1
-    },
-    {
       "subject": 1,
       "class": 1,
       "question": "asdfasdf asdfa asdas asdfjas asdfjasdf asdfas",
