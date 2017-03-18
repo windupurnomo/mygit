@@ -51,29 +51,31 @@
       "name": "12"
     }
   ],
-  "questions": [
+  "users": [
     {
-      "subject": 1,
-      "class": 1,
-      "question": "asdfasdf asdfa asdas asdfjas asdfjasdf asdfas",
-      "opt1": "asdasdf iui",
-      "opt2": "asdfa ioouou",
-      "opt3": "ooiou asd",
-      "opt4": "opopiu",
-      "answer": "1",
+      "nama": "amin",
+      "email": "aminudin0604@gmail.com",
+      "handphone": 9893894893,
+      "role": "TEACHER",
       "id": 2
     },
     {
-      "subject": 2,
-      "class": 1,
-      "question": "asdfasdf",
-      "opt1": "i",
-      "opt2": "i",
-      "opt3": "i",
-      "opt4": "i",
-      "answer": "1",
+      "nama": "kansknd",
+      "email": "aknden",
+      "handphone": 90909,
+      "role": "ADMIN",
       "id": 3
     },
+    {
+      "nama": "fdef",
+      "email": "eqe",
+      "handphone": 566,
+      "role": "STUDENT",
+      "id": 4
+    }
+  ],
+  "exams": [{}],
+  "questions": [
     {
       "subject": 2,
       "class": 1,
@@ -95,6 +97,28 @@
       "opt4": "t",
       "answer": "3",
       "id": 5
+    },
+    {
+      "subject": 4,
+      "class": 2,
+      "question": "hdshg",
+      "opt1": "ghh",
+      "opt2": "ghg",
+      "opt3": "hg",
+      "opt4": "hg",
+      "answer": "1",
+      "id": 6
+    },
+    {
+      "subject": 4,
+      "class": 2,
+      "question": "jkjkjsxc",
+      "opt1": "j",
+      "opt2": "kjk",
+      "opt3": "jj",
+      "opt4": "kj",
+      "answer": "1",
+      "id": 7
     }
   ]
 }

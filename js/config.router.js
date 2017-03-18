@@ -34,12 +34,20 @@ angular.module('app', ['ui.router'])
 
     .state('users', {
         url: '/users',
-        templateUrl: 'tpl/users.html'
+        templateUrl: 'tpl/users.html',
+        controller: "UsersCTRL"
     })
 
     .state('user', {
-        url: '/user',
-        templateUrl: 'tpl/user.html'
+        url: '/user/:id',
+        templateUrl: 'tpl/user.html',
+        controller: "UserCTRL"
+    })
+
+    .state('user-detail', {
+        url: '/user-detail/:id',
+        templateUrl: 'tpl/user-detail.html',
+        controller: "UserDetailCTRL"
     })
 
     .state('question', {
@@ -62,7 +70,8 @@ angular.module('app', ['ui.router'])
 
     .state('exams', {
         url: '/exams',
-        templateUrl: 'tpl/exams.html'
+        templateUrl: 'tpl/exams.html',
+        controller: "ExamsCTRL"
     })
 
     .state('myexams', {
@@ -72,11 +81,13 @@ angular.module('app', ['ui.router'])
 
     .state('exam-detail', {
         url: '/exam-detail',
-        templateUrl: 'tpl/exam-detail.html'
+        templateUrl: 'tpl/exam-detail.html',
+        controller: "ExamDetailCTRL"
     })
 
     .state('exam', {
         url: '/exam',
-        templateUrl: 'tpl/exam.html'
+        templateUrl: 'tpl/exam.html',
+        controller: "ExamCTRL"
     })
 });

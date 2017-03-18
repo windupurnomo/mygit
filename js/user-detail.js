@@ -1,15 +1,17 @@
 'use strict';
 angular.module('app')
-.controller("QuestionsCTRL", function($scope, $http, $state, URL){
-
+.controller("UserDetailCTRL", function($scope, $http, $state, $stateParams, URL){
 	var subjects, classes = [];
+	var id = $stateParams.id;
 
-	var init = function (){
-		$http.get(URL + "/questions").then(function (res){
-			$scope.questions = res.data;
+	if (id == null) alert("User tidak ditemukan");
+	else{
+		$http.get(URL + "/users/" + id).then(function (res){
+			$scope.form = res.data;
+		}, function (){
+			alert("User tidak ditemukan");
 		});
-	};
-	init();
+	}
 
 	$http.get(URL + "/subject").then(function (res){
 		subjects = res.data;
@@ -32,20 +34,4 @@ angular.module('app')
 		}
 		return null;
 	}
-
-	$scope.edit = function (id){
-
-	}
-
-	$scope.delete = function (id){
-		var a = confirm("Apakah Anda yakin akan menghapus Soal?");
-		if (a){
-			$http.delete(URL + "/questions/" + id).then(function (){
-				init();
-			});
-		}
-	}
-
-
-	
 });

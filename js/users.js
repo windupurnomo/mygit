@@ -1,12 +1,12 @@
 'use strict';
 angular.module('app')
-.controller("QuestionsCTRL", function($scope, $http, $state, URL){
+.controller("UsersCTRL", function($scope, $http, $state, URL){
 
 	var subjects, classes = [];
 
 	var init = function (){
-		$http.get(URL + "/questions").then(function (res){
-			$scope.questions = res.data;
+		$http.get(URL + "/users").then(function (res){
+			$scope.users = res.data;
 		});
 	};
 	init();
@@ -38,9 +38,9 @@ angular.module('app')
 	}
 
 	$scope.delete = function (id){
-		var a = confirm("Apakah Anda yakin akan menghapus Soal?");
+		var a = confirm("Apakah Anda yakin akan menghapus user?");
 		if (a){
-			$http.delete(URL + "/questions/" + id).then(function (){
+			$http.delete(URL + "/users/" + id).then(function (){
 				init();
 			});
 		}

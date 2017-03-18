@@ -1,0 +1,12 @@
+[0228/221751.899:ERROR:scoped_process_suspend.cc(30)] NtSuspendProcess: An attempt was made to access an exiting process.  (0xc000010a)
+[0228/221752.687:ERROR:process_info.cc(103)] ReadProcessMemory bool __cdecl crashpad::`anonymous-namespace'::ReadStruct<struct crashpad::process_types::PEB<struct crashpad::process_types::internal::Traits32>>(void *,unsigned __int64,struct crashpad::process_types::PEB<struct crashpad::process_types::internal::Traits32> *): Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0228/221752.688:ERROR:process_info.cc(542)] ReadProcessData failed
+[0228/221752.688:ERROR:process_reader_win.cc(233)] ReadMemory at 0x6bed7598 of 12 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0228/221752.771:WARNING:process_snapshot_win.cc(68)] ReadMemory ExceptionInformation failed
+[0228/221752.771:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0228/224952.860:ERROR:scoped_process_suspend.cc(30)] NtSuspendProcess: An attempt was made to access an exiting process.  (0xc000010a)
+[0228/224952.887:ERROR:process_info.cc(103)] ReadProcessMemory bool __cdecl crashpad::`anonymous-namespace'::ReadStruct<struct crashpad::process_types::RTL_USER_PROCESS_PARAMETERS<struct crashpad::process_types::internal::Traits32>>(void *,unsigned __int64,struct crashpad::process_types::RTL_USER_PROCESS_PARAMETERS<struct crashpad::process_types::internal::Traits32> *): Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0228/224952.888:ERROR:process_info.cc(542)] ReadProcessData failed
+[0228/224952.888:ERROR:process_reader_win.cc(233)] ReadMemory at 0x6bed7598 of 12 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0228/224952.888:WARNING:process_snapshot_win.cc(68)] ReadMemory ExceptionInformation failed
+[0228/224952.889:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
