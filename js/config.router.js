@@ -80,13 +80,13 @@ angular.module('app', ['ui.router'])
     })
 
     .state('exam-detail', {
-        url: '/exam-detail',
+        url: '/exam-detail/:id',
         templateUrl: 'tpl/exam-detail.html',
         controller: "ExamDetailCTRL"
     })
 
     .state('exam', {
-        url: '/exam',
+        url: '/exam/:id',
         templateUrl: 'tpl/exam.html',
         controller: "ExamCTRL"
     })

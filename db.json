@@ -74,7 +74,18 @@
       "id": 4
     }
   ],
-  "exams" : [],
+  "exams": [
+    {
+      "judul": "hih",
+      "deskripsi": "ihi",
+      "mapel": "hi",
+      "kelas": "hih",
+      "guru": "ih",
+      "jumlah": "ih",
+      "tanggal": 9090,
+      "id": 1
+    }
+  ],
   "questions": [
     {
       "subject": 2,

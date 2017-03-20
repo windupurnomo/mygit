@@ -21,7 +21,7 @@ angular.module('app')
 		if (id == ""){
 			console.log($scope.form)
 			$http.post(URL + "/exams", $scope.form).then(function (res){
-				$state.go("user-detail", {id: res.data.id});
+				$state.go("exam-detail", {id: res.data.id});
 			});
 		}else{
 			$http.put(URL + "/exams/" + id, $scope.form).then(function (res){
