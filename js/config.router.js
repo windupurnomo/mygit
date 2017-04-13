@@ -75,8 +75,15 @@ angular.module('app', ['ui.router'])
     })
 
     .state('myexams', {
-        url: '/myexams',
-        templateUrl: 'tpl/myexams.html'
+        url: '/myexams/:id',
+        templateUrl: 'tpl/myexams.html',
+        controller: "MyexamsCTRL"
+    })
+
+    .state('myexam', {
+        url: '/myexam/:id',
+        templateUrl: 'tpl/myexam.html',
+        controller: "MyexamCTRL"
     })
 
     .state('exam-detail', {

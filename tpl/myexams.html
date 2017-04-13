@@ -28,19 +28,19 @@
                     </tr> 
                   </thead>
                   <tbody>
-                          <tr>
-                            <td align="center">
-                              <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
-                              <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
-                            </td>
-                            <td class="hidden-xs">-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                          </tr>
-                        </tbody>
+                    <tr ng-repeat="q in users">
+                      <td>{{q.judul}}</td>
+                      <td>{{q.deskripsi}}</td>
+                      <td>{{q.mapel}}</td>
+                      <td>{{q.kelas}}</td>
+                      <td>{{q.nilai}}</td>
+                      <td>{{q.tanggal}}</td>
+                      <td align="center">
+                        <a class="btn btn-default" href="#/myexam/{{q.id}}"><i class="fa fa-pencil"></i></a>
+                        <a class="btn btn-danger" ng-click="delete(q.id)"><i class="fa fa-trash"></i></a>
+                      </td>
+                    </tr>
+                  </tbody>
                 </table>
             
               </div>
